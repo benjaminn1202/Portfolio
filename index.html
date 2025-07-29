@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Rollan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <img class="main-icon" src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/480191602_2430968513914367_1186939029363574916_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEslkro2aaH736N2uoh1qsHDH_I4aaTCoIMf8jhppMKglPeb4pRzaxdBHD2PDm3U0S6Y9rO8ZhflaOE6mqwutyn&_nc_ohc=1_EQXNqPE90Q7kNvwElIK9g&_nc_oc=AdnJb1qFR4ybc4XUTEwNkxnVvI_ixNs7ndsiVPPh6yOqlPkygxAxfk6PehDOpFXbJZw&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_gid=h6Rn-0SNxnLZxBAdeJboDg&oh=00_AfR7hD02MQGsXiExVnX03CchVO-YS-j0EvEOwZuKGDhMMg&oe=688B8ABC">
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-gap"></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link active">About</a></li>
+                <li><a href="#academic" class="nav-link">Academics</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#links" class="nav-link">Links</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Hi, I'm Benjamin Rollan, a fourth-year Bachelor of Science in Information Technology student at Quezon City University.</p>
+        </section>
+
+        <section id="academic">
+            <h2>Academics</h2>
+            
+            <div class="academic-item">
+                <div class="academic-header" onclick="toggleAcademics(this)">
+                    <h3>Quezon City University, Bachelor of Science in Information and Technology (2022 - Present)</h3>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="academic-content">
+                    <div class="academic-details">
+                        <p>
+                            During my time at Quezon City University, originally a local government–run technical school that became a full university in 2019, I’ve benefited from its commitment to accessible and quality education. Through the BS Information Technology program, I’ve gained hands-on experience in managing both hardware and software systems to deliver real-world computing solutions.
+                        </p>
+                    
+                        <div class="grade-badge" onclick="openGradeSlip('https://drive.google.com/file/d/1C_hYjBg1vezd2k6FXZBDK6H0NkUwhEY-/view?usp=drive_link')">1st Year (1st Semester) Grade Slip</div>
+                        <div class="grade-badge" onclick="openGradeSlip('https://drive.google.com/file/d/1SYNKfL99If_84Bj4D46IjqV4TTXJvOYx/view?usp=drive_link')">1st Year (2nd Semester) Grade Slip</div>
+                        <div class="grade-badge" onclick="openGradeSlip('https://drive.google.com/file/d/1QaDIwlEFiRpRfqq0YKMWuFeLBiiATsrx/view?usp=drive_link')">2nd Year (1st Semester) Grade Slip</div>
+                        <div class="grade-badge" onclick="openGradeSlip('https://drive.google.com/file/d/1kaIk0fbFitPrDsu_tht0rGBIUxQ9iqpc/view?usp=drive_link')">2nd Year (2nd Semester) Grade Slip</div>
+                        <div class="grade-badge" onclick="openGradeSlip('https://drive.google.com/file/d/1OGYfemDCeTpTMC4oC2dEBXM4i4SJI2eD/view?usp=drive_link')">3rd Year (1st Semester) Grade Slip</div>
+                        <div class="grade-badge" onclick="openGradeSlip('https://drive.google.com/file/d/1JYW-H8TMrngqG_YsZ9-GHmkJJgiqOiml/view?usp=drive_link')">3rd Year (2nd Semester) Grade Slip</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="academic-item">
+                <div class="academic-header" onclick="toggleAcademics(this)">
+                    <h3>North Fairview High School, Senior High School - TVL Computer Programming (2020 - 2022)</h3>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="academic-content">
+                    <div class="academic-details">
+                        <p>Specialized in Technical-Vocational-Livelihood track with focus on Computer Programming</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p class="projects-description">
+                I'm an aspiring web developer with hands-on experience building websites and desktop applications. My projects reflect my growing skills and my focus on creating responsive, user-friendly solutions.
+            </p>
+            
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card" onclick="openProject('https://github.com/benjaminn1202/GastosTracker')">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <img src="https://github.com/benjaminn1202/GastosTracker/blob/main/GastosTracker/Img/GastosTracker.png?raw=true" alt="GastoTracker">
+                        </div>
+                        <h3 class="project-title">GastosTracker</h3>
+                    </div>
+                    <p class="project-description">A free personal expense tracker mobile application for android</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JS</span>
+                        <span class="tech-badge">SQLITE</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProject('https://github.com/benjaminn1202/Spotter_Quezon-City-University-Meeting-Room-Reservation-System/tree/main')">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <img src="https://github.com/benjaminn1202/Spotter_Quezon-City-University-Meeting-Room-Reservation-System/blob/main/Spotter/src/Resources/Spotter.png?raw=true" alt="GastoTracker">
+                        </div>
+                        <h3 class="project-title">Spotter</h3>
+                    </div>
+                    <p class="project-description">A university project. A user-friendly Meeting Room Booking System that simplifies the process of reserving meeting rooms within the library.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProject('https://github.com/benjaminn1202/Animated-Rock-Paper-Scissors')">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <img src="https://github.com/benjaminn1202/Animated-Rock-Paper-Scissors/blob/main/resources/images/Animatd%20Rock-Paper-Scissors.png?raw=true" alt="Animated Rock-Paper-Scissors">
+                        </div>
+                        <h3 class="project-title">Animated Rock-Paper-Scissors</h3>
+                    </div>
+                    <p class="project-description">A simple rock-paper-scissors game with animated graphics written in vanilla HTML, CSS, and JavaScript.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JS</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProject('https://github.com/benjaminn1202/Simple-Turn-Based-Game')">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <img src="https://github.com/benjaminn1202/Simple-Turn-Based-Game/blob/main/Simple%20Turn-Based%20Game/brawler.png?raw=true" alt="UnitConv">
+                        </div>
+                        <h3 class="project-title">Simple Turn-Based Game</h3>
+                    </div>
+                    <p class="project-description">A simple turn-based game written in HTML, CSS, and JavaScript. You play as Benjamin and you fight a giant rat controlled by the computer.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p class="skills-description">
+                I have experience in both front-end and back-end development, with a focus on building functional, responsive, and user-friendly web applications. I'm also expanding my knowledge in networking and server-side development.
+            </p>
+            
+            <div class="skills-grid" id="skillsGrid1">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="images/icons/language-java.svg" alt="Java">
+                    </div>
+                    <div class="skill-name">Java</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="images/icons/language-javascript.svg" alt="JavaScript">
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="images/icons/language-css3.svg" alt="CSS3">
+                    </div>
+                    <div class="skill-name">CSS3</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="images/icons/language-html5.svg" alt="HTML">
+                    </div>
+                    <div class="skill-name">HTML</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="images/icons/language-php.svg" alt="PHP">
+                    </div>
+                    <div class="skill-name">PHP</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="images/icons/language-dot-net.svg" alt="VB.NET">
+                    </div>
+                    <div class="skill-name">VB.NET</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="images/icons/language-mysql.svg" alt="MySQL">
+                    </div>
+                    <div class="skill-name">MySQL</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="projects-description">
+                Have a question or want to work together? Feel free to send me a message using the form below. I’ll get back to you as soon as I can.
+            </p>
+            
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                  <input type="text" name="name" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" name="message" id="message" required></textarea>
+                </div>
+                <div class="form-buttons">
+                  <button type="button" class="btn btn-secondary" onclick="document.getElementById('contact-form').reset()">Clear</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+        </section>
+
+        <section id="links"  style="margin-bottom: 16rem;">
+            <h2>Links</h2>
+            <p class="projects-description">
+                You can find my social profiles, resume, and other relevant files through the links below. Feel free to explore, connect, or download anything you need.
+            </p>
+
+            <div class="social-links">
+                <div onclick="openLink('https://github.com/benjaminn1202')" class="social-link">
+                    <div class="social-icon"><img src="images/icons/github.svg"></div>
+                    GitHub
+                </div>
+                <div onclick="openLink('https://www.facebook.com/benjaminn1202/')" class="social-link">
+                    <div class="social-icon"><img src="images/icons/facebook.svg"></div>
+                    Facebook
+                </div>
+                <div onclick="openLink('https://www.instagram.com/benjaminn1202/')" class="social-link">
+                    <div class="social-icon"><img src="images/icons/instagram.svg"></div>
+                    Instagram
+                </div>
+                <div onclick="openLink('https://www.linkedin.com/in/benjamin-rollan-a2690a229/')" class="social-link">
+                    <div class="social-icon"><img src="images/icons/linkedin.svg"></div>
+                    LinkedIn
+                </div>
+                <div onclick="openLink('mailto:benj.rollan.02@gmail.com')" class="social-link">
+                    <div class="social-icon"><img src="images/icons/gmail.svg"></div>
+                    Gmail
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "_ZgsXNsSeoR2VWeAz",
+        });
+    })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
