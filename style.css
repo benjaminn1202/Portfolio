@@ -294,6 +294,9 @@ p {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background: #2a2a2a;
     padding: 1rem;
     transition: all 0.3s ease;
@@ -331,6 +334,10 @@ p {
 }
 
 .project-icon {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
     width: 40px;
     height: 40px;
     margin-right: 1rem;
@@ -348,7 +355,7 @@ p {
 }
 
 .project-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #ffffff;
     margin: 0;
@@ -364,6 +371,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: auto;
 }
 
 .tech-badge {
