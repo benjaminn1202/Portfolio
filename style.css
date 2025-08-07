@@ -225,6 +225,110 @@ p {
     border-color: #ffffff;
 }
 
+/* Certificates Section */
+.certificate-item {
+    background: #2a2a2a;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.certificate-header {
+    padding: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    transition: background 0.3s ease;
+}
+
+.certificate-header:hover {
+    background: #404040;
+}
+
+.certificate-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.certificate-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #2a2a2a;
+}
+
+.certificate-content.open {
+    max-height: 1000vh;
+}
+
+.certificate-details {
+    padding: 1.5rem;
+}
+.certificate-details p {
+    margin-bottom: 1rem;
+}
+
+.certificate-badge {
+    display: inline-block;
+    background: #404040;
+    color: #ffffff;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+    margin: 0.2rem;
+    border: 1px solid #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.certificate-badge:hover {
+    background: #ffffff;
+    color: #1a1a1a;
+    border-color: #ffffff;
+}
+
+#image-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: opacity 0.3s ease;
+}
+
+#image-overlay img {
+    max-width: 90%;
+    max-height: 90vh;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+#image-overlay .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#image-overlay .close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
 /* Skills Section */
 .skills-description {
     margin-bottom: 2rem;

@@ -19,6 +19,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about" class="nav-link active">About</a></li>
                 <li><a href="#academic" class="nav-link">Academics</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -31,6 +32,11 @@
         <section id="about">
             <h2>About</h2>
             <p>Hi, I'm Benjamin Rollan, a fourth-year Bachelor of Science in Information Technology student at Quezon City University.</p>
+            
+            <div class="about-buttons" style="margin-top: 2rem">
+                <button type="button" class="btn btn-secondary" onclick="jumpToSection('projects')">View Projects</button>
+                <button type="button" class="btn btn-primary" onclick="openLink('https://github.com/benjaminn1202')">Download Resume</button>
+              </div>
         </section>
 
         <section id="academic">
@@ -47,7 +53,12 @@
                             During my time at Quezon City University, originally a local government–run technical school that became a full university in 2019, I’ve benefited from its commitment to accessible and quality education. Through the BS Information Technology program, I’ve gained hands-on experience in managing both hardware and software systems to deliver real-world computing solutions.
                         </p>
                     
-                        <div class="grade-badge" onclick="openGradeSlip('https://github.com/benjaminn1202/Portfolio/tree/main/grade-slips')">View Grade Slips</div>
+                        <div class="grade-badge" onclick="openGradeSlip('grade-slips/3rd-year-2nd-sem.jpg')">3rd Year - 2nd Semester</div>
+                        <div class="grade-badge" onclick="openGradeSlip('grade-slips/3rd-year-1st-sem.jpg')">3rd Year - 1st Semester</div>
+                        <div class="grade-badge" onclick="openGradeSlip('grade-slips/2nd-year-2nd-sem.jpg')">2nd Year - 2nd Semester</div>
+                        <div class="grade-badge" onclick="openGradeSlip('grade-slips/2nd-year-1st-sem.jpg')">2nd Year - 1st Semester</div>
+                        <div class="grade-badge" onclick="openGradeSlip('grade-slips/1st-year-2nd-sem.jpg')">1st Year - 2nd Semester</div>
+                        <div class="grade-badge" onclick="openGradeSlip('grade-slips/1st-year-1st-sem.jpg')">1st Year - 1st Semester</div>
                     </div>
                 </div>
             </div>
@@ -64,6 +75,142 @@
                 </div>
             </div>
         </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            
+            <!-- QCU-LESIT () -->
+            <div class="certificate-item">
+                <div class="certificate-header" onclick="toggleCertificates(this)">
+                    <h3>QCU - League of Excellent Students in Information Technology</h3>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="certificate-content">
+                    <div class="certificate-details">
+                        <p>Served as Assistant Secretary and later as Executive Secretary of the QCU - League of Excellent Students in Information Technology, contributing to organizational leadership and administrative coordination from 2023 to 2025.</p>
+                        
+                        <div class="certificate-badge" onclick="openCertificate('certificates/lesit/appreciation-certificate-2025_lesit.jpg')">
+                            QCU-LESIT Certificate of Appreciation (A.Y 2023-2025)
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/lesit/appreciation-certificate-2024_lesit.png')">
+                            QCU-LESIT Certificate of Appreciation (A.Y 2023-2024)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- IT-Related Certificates -->
+            <div class="certificate-item">
+                <div class="certificate-header" onclick="toggleCertificates(this)">
+                    <h3>IT-Related Certifications</h3>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="certificate-content">
+                    <div class="certificate-details">
+                        <p>Professional certifications and recognitions in cybersecurity, tech entrepreneurship, and IT services.</p>
+                        
+                        <div class="certificate-badge" onclick="openCertificate('certificates/it-related/techtrends-dict.jpg')">
+                            Tech Trends: Cybersecurity (Advanced Session) Certificate
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/it-related/tech-preneurship-2024_QCU.jpg')">
+                            Tech Preneurship 2024 - QCU
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses -->
+            <div class="certificate-item">
+                <div class="certificate-header" onclick="toggleCertificates(this)">
+                    <h3>Technical Courses</h3>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="certificate-content">
+                    <div class="certificate-details">
+                        <p>Web development fundamentals and programming courses completed.</p>
+                        
+                        <div class="certificate-badge" onclick="openCertificate('certificates/courses/html5-basics_josh-werner.jpg')">
+                            HTML5 Basics - Josh Werner
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/courses/css3-basics_josh-werner.jpg')">
+                            CSS3 Basics - Josh Werner
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/courses/javascript-basics_josh-werner.jpg')">
+                            JavaScript Basics - Josh Werner
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Leadership -->
+            <div class="certificate-item">
+                <div class="certificate-header" onclick="toggleCertificates(this)">
+                    <h3>Leadership Programs</h3>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="certificate-content">
+                    <div class="certificate-details">
+                        <p>Workshops and training in leadership development and mentorship.</p>
+                        
+                        <div class="certificate-badge" onclick="openCertificate('certificates/leadership/leadership-spellbook_jpiaqcu.png')">
+                            Leadership Spellbook - JPIA QCU
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/leadership/transformational-leadership-workshop_qcu.jpg')">
+                            Transformational Leadership Workshop
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/leadership/startup-mentors_1st.jpg')">
+                            Startup Mentors Program (Phase 1)
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/leadership/startup-mentors_2nd.jpg')">
+                            Startup Mentors Program (Phase 2)
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/leadership/youth-summit-2023_qc.jpg')">
+                            QC Youth Summit 2023
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Community Service -->
+            <div class="certificate-item">
+                <div class="certificate-header" onclick="toggleCertificates(this)">
+                    <h3>Community Service</h3>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="certificate-content">
+                    <div class="certificate-details">
+                        <p>Certificates from literacy programs and university extension services.</p>
+                        
+                        <div class="certificate-badge" onclick="openCertificate('certificates/community-service/tara-basa-2023.png')">
+                            Tara Basa! 2023
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/community-service/tara-basa-2024.jpg')">
+                            Tara Basa! 2024
+                        </div>
+                        <div class="certificate-badge" onclick="openCertificate('certificates/community-service/university_extension-2023-recap.jpg')">
+                            University Extension 2023 Recap
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Others -->
+            <div class="certificate-item">
+                <div class="certificate-header" onclick="toggleCertificates(this)">
+                    <h3>Other Certifications</h3>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="certificate-content">
+                    <div class="certificate-details">
+                        <p>Additional certifications in specialized areas.</p>
+                        
+                        <div class="certificate-badge" onclick="openCertificate('certificates/others/mental-health-youth-hub_nyc.jpg')">
+                            Mental Health Youth Hub - NYC
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
 
         <section id="projects">
             <h2>Projects</h2>
@@ -197,6 +344,12 @@
                     </div>
                     <div class="skill-name">MySQL</div>
                 </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="images/icons/logo-figma.svg" alt="MySQL">
+                    </div>
+                    <div class="skill-name">Figma</div>
+                </div>
             </div>
         </section>
 
@@ -233,6 +386,10 @@
             </p>
 
             <div class="social-links">
+                <div onclick="openLink('https://github.com/benjaminn1202')" class="social-link">
+                    <div class="social-icon"><img src="images/icons/file-document-outline.svg"></div>
+                    Downlaod Resume
+                </div>
                 <div onclick="openLink('https://github.com/benjaminn1202')" class="social-link">
                     <div class="social-icon"><img src="images/icons/github.svg"></div>
                     GitHub
