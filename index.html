@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Rollan - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <img class="main-icon" src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/480191602_2430968513914367_1186939029363574916_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEslkro2aaH736N2uoh1qsHDH_I4aaTCoIMf8jhppMKglPeb4pRzaxdBHD2PDm3U0S6Y9rO8ZhflaOE6mqwutyn&_nc_ohc=1_EQXNqPE90Q7kNvwElIK9g&_nc_oc=AdnJb1qFR4ybc4XUTEwNkxnVvI_ixNs7ndsiVPPh6yOqlPkygxAxfk6PehDOpFXbJZw&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_gid=h6Rn-0SNxnLZxBAdeJboDg&oh=00_AfR7hD02MQGsXiExVnX03CchVO-YS-j0EvEOwZuKGDhMMg&oe=688B8ABC">
+            <a href="/" class="main-icon">
+                <img src="images/logo.png">
+            </a>
             <div class="mobile-menu" onclick="toggleMobileMenu()">
                 <span></span>
                 <span></span>
@@ -219,6 +222,37 @@
             </p>
             
             <div class="projects-grid" id="projectsGrid">
+                <div class="project-card" onclick="openProject('https://github.com/benjaminn1202/PomodoRooms')">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <img src="https://github.com/benjaminn1202/PomodoRooms/blob/main/src/assets/pomodorooms.png?raw=true" alt="PomodoRoom">
+                        </div>
+                        <h3 class="project-title">PomodoRooms</h3>
+                    </div>
+                    <p class="project-description">Under Development. A cozy, collaborative Pomodoro timer web app where you can work in real-time virtual rooms with friends or teammates.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">React</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" onclick="openProject('https://github.com/benjaminn1202/SarapMatch')">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <img src="https://github.com/benjaminn1202/SarapMatch/blob/main/images/logo_sarap-match.png?raw=true" alt="SarapMatch">
+                        </div>
+                        <h3 class="project-title">SarapMatch</h3>
+                    </div>
+                    <p class="project-description">SarapMatch helps you find recipes using the ingredients you already have.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">Bootstrap</span>
+                        <span class="tech-badge">JS</span>
+                    </div>
+                </div>
+
                 <div class="project-card" onclick="openProject('https://github.com/benjaminn1202/GastosTracker')">
                     <div class="project-header">
                         <div class="project-icon">
@@ -322,9 +356,21 @@
                 </div>
                 <div class="skill-item">
                     <div class="skill-icon">
+                        <img src="images/icons/language-bootstrap.svg" alt="Bootstrap">
+                    </div>
+                    <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
                         <img src="images/icons/language-html5.svg" alt="HTML">
                     </div>
                     <div class="skill-name">HTML</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="images/icons/language-react.png" alt="React">
+                    </div>
+                    <div class="skill-name">React</div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-icon">

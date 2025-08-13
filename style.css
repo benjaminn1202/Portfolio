@@ -47,7 +47,12 @@ nav {
 }
 
 .main-icon {
-    height: 35px;   
+    height: 30px;
+    width: 30px;
+}
+.main-icon img {
+    height: 30px;
+    width: 30px;
 }
 
 .nav-gap {
